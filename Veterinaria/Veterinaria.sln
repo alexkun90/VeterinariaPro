@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinaria", "Veterinaria\Veterinaria.csproj", "{B158C133-BAD6-4F20-A0DD-36F290935EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{EA97957C-958C-4FBE-9D44-1AD9929F787E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B158C133-BAD6-4F20-A0DD-36F290935EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B158C133-BAD6-4F20-A0DD-36F290935EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B158C133-BAD6-4F20-A0DD-36F290935EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B158C133-BAD6-4F20-A0DD-36F290935EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA97957C-958C-4FBE-9D44-1AD9929F787E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA97957C-958C-4FBE-9D44-1AD9929F787E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA97957C-958C-4FBE-9D44-1AD9929F787E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA97957C-958C-4FBE-9D44-1AD9929F787E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75759ECF-8D44-4D9C-A5A9-D41CC13E92CF}
+	EndGlobalSection
+EndGlobal
