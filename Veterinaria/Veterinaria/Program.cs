@@ -1,7 +1,19 @@
+using FrontEnd.Helpers.Implementations;
+using FrontEnd.Helpers.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Configuracion FrontEnd
+
+
+builder.Services.AddHttpClient<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<IMascotaHelper, MascotaHelper>();
+
+
 
 var app = builder.Build();
 
