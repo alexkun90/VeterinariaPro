@@ -23,6 +23,10 @@ builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<IMascotaDAL, MascotaDALImpl>();
 builder.Services.AddScoped<IMascotaService, MascotaService>();
 
+//Desparasitaciones
+builder.Services.AddScoped<IDesparasitacionesVacunaDAL, DesparasitacionesVacunaDALImpl>();
+builder.Services.AddScoped<IDesparasitacionesVacunaService, DesparacitacionesVacunaService>();  
+
 
 
 
