@@ -23,11 +23,9 @@ builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<IMascotaDAL, MascotaDALImpl>();
 builder.Services.AddScoped<IMascotaService, MascotaService>();
 
-
-
-
-
-
+//Citas
+builder.Services.AddScoped<ICitasDAL,CitasDALImpl>();
+builder.Services.AddScoped<ICitaService, CitaService>();
 
 
 var app = builder.Build();

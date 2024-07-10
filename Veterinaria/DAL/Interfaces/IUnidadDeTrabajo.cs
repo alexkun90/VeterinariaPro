@@ -9,6 +9,7 @@ namespace DAL.Interfaces
     public interface IUnidadDeTrabajo: IDisposable
     {
         IMascotaDAL MascotaDAL { get; }
+        ICitasDAL CitasDAL { get; }
        
         bool Complete();
     }
