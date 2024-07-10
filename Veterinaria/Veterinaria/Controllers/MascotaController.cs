@@ -8,14 +8,18 @@ namespace FrontEnd.Controllers
     public class MascotaController : Controller
     {
         IMascotaHelper MascotaHelper;
+        //IRazaHelper RazaHelper;
+        //ITipoMascota TipoMascota;
 
         public MascotaController(IMascotaHelper mascotaHelper)
         {
-            MascotaHelper = mascotaHelper;
+            this.MascotaHelper = mascotaHelper;
         }
         // GET: MascotaController
         public ActionResult Index()
         {
+            List<MascotaViewModel> lista = MascotaHelper.GetMascotas();
+
             return View(MascotaHelper.GetMascotas());
         }
 
