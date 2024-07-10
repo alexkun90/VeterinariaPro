@@ -11,16 +11,18 @@ namespace DAL.Implementations
     public class UnidadDeTrabajo : IUnidadDeTrabajo
     {
         public IMascotaDAL MascotaDAL { get; set; }
-      
+        public IMedicamentoDAL MedicamentoDAL { get; set; }
+
 
         private VeterinariaProContext _veterinariaProContext;
 
         public UnidadDeTrabajo(VeterinariaProContext veterinariaProContext,
-                        IMascotaDAL mascotaDAL
+                        IMascotaDAL mascotaDAL,
+                        IMedicamentoDAL medicamentoDAL
             ) 
         {
                 this._veterinariaProContext = veterinariaProContext;
-                this.MascotaDAL = mascotaDAL;
+                this.MedicamentoDAL = medicamentoDAL;
         }
        
 

@@ -22,6 +22,8 @@ builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 //Mascotas
 builder.Services.AddScoped<IMascotaDAL, MascotaDALImpl>();
 builder.Services.AddScoped<IMascotaService, MascotaService>();
+builder.Services.AddScoped<IMedicamentoDAL, MedicamentoDALImpl>();
+builder.Services.AddScoped<IMedicamentoService, MedicamentoService>();
 
 
 
