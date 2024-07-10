@@ -20,8 +20,7 @@ namespace DAL.Implementations
 
         public UnidadDeTrabajo(VeterinariaProContext veterinariaProContext,
                         IMascotaDAL mascotaDAL,
-                        ICitasDAL citasDAL
-
+                        ICitasDAL citasDAL,
                         IDesparasitacionesVacunaDAL desparasitacionesVacunaDAL
             ) 
         {
