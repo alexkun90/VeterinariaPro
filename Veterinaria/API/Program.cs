@@ -26,6 +26,15 @@ builder.Services.AddScoped<IMascotaService, MascotaService>();
 //Citas
 builder.Services.AddScoped<ICitasDAL,CitasDALImpl>();
 builder.Services.AddScoped<ICitaService, CitaService>();
+//Desparasitaciones
+builder.Services.AddScoped<IDesparasitacionesVacunaDAL, DesparasitacionesVacunaDALImpl>();
+builder.Services.AddScoped<IDesparasitacionesVacunaService, DesparacitacionesVacunaService>();  
+
+
+
+
+
+
 
 
 var app = builder.Build();

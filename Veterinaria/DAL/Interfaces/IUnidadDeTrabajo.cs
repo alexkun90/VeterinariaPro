@@ -10,6 +10,7 @@ namespace DAL.Interfaces
     {
         IMascotaDAL MascotaDAL { get; }
         ICitasDAL CitasDAL { get; }
+        IDesparasitacionesVacunaDAL DesparasitacionesVacunaDAL { get; }
        
         bool Complete();
     }

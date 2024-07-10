@@ -13,6 +13,8 @@ namespace DAL.Implementations
         public IMascotaDAL MascotaDAL { get; set; }
         public ICitasDAL CitasDAL { get; set; }
 
+        public IDesparasitacionesVacunaDAL DesparasitacionesVacunaDAL { get; set; } 
+      
 
         private VeterinariaProContext _veterinariaProContext;
 
@@ -20,11 +22,13 @@ namespace DAL.Implementations
                         IMascotaDAL mascotaDAL,
                         ICitasDAL citasDAL
 
+                        IDesparasitacionesVacunaDAL desparasitacionesVacunaDAL
             ) 
         {
                 this._veterinariaProContext = veterinariaProContext;
                 this.MascotaDAL = mascotaDAL;
                 this.CitasDAL = citasDAL;
+            this.DesparasitacionesVacunaDAL = desparasitacionesVacunaDAL;
         }
        
 
