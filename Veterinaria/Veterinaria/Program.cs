@@ -12,6 +12,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IMascotaHelper, MascotaHelper>();
+builder.Services.AddScoped<ICitaHelper,CitaHelper>();
+builder.Services.AddScoped<IDesparasitacionesVacunaHelper, DesparasitacionesVacunaHelper>();    
 
 
 
