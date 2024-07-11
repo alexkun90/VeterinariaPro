@@ -1,4 +1,4 @@
-﻿using Entities.Entities;
+﻿
 using Microsoft.AspNetCore.Mvc;
 
 namespace FrontEnd.Models
@@ -13,6 +13,6 @@ namespace FrontEnd.Models
 
         public int? CitaId { get; set; }
 
-        public virtual Cita? Cita { get; set; }
+        //public virtual Cita? Cita { get; set; }
     }
 }
