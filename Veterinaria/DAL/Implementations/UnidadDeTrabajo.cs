@@ -1,4 +1,4 @@
-﻿using DAL.Interfaces;
+using DAL.Interfaces;
 using Entities.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,16 +13,25 @@ namespace DAL.Implementations
         public IMascotaDAL MascotaDAL { get; set; }
         public IMedicamentoDAL MedicamentoDAL { get; set; }
 
+        public ICitasDAL CitasDAL { get; set; }
+
+        public IDesparasitacionesVacunaDAL DesparasitacionesVacunaDAL { get; set; } 
+      
 
         private VeterinariaProContext _veterinariaProContext;
 
         public UnidadDeTrabajo(VeterinariaProContext veterinariaProContext,
                         IMascotaDAL mascotaDAL,
-                        IMedicamentoDAL medicamentoDAL
+                        IMedicamentoDAL medicamentoDAL,
+                        ICitasDAL citasDAL,
+                        IDesparasitacionesVacunaDAL desparasitacionesVacunaDAL
             ) 
         {
                 this._veterinariaProContext = veterinariaProContext;
-                this.MedicamentoDAL = medicamentoDAL;
+                this.MascotaDAL = mascotaDAL;
+                this.CitasDAL = citasDAL;
+            this.DesparasitacionesVacunaDAL = desparasitacionesVacunaDAL;
+            this.MedicamentoDAL = medicamentoDAL;
         }
        
 
@@ -33,9 +42,9 @@ namespace DAL.Implementations
                 _veterinariaProContext.SaveChanges();
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                ex.ToString();
                 return false;
             }
         }

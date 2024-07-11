@@ -1,4 +1,6 @@
-﻿namespace FrontEnd.Models
+﻿using Entities.Entities;
+
+namespace FrontEnd.Models
 {
     public class MascotaViewModel
     {
@@ -7,8 +9,12 @@
         public string? NombreMascota { get; set; }
 
         public int? TipoMascotaId { get; set; }
+        public IEnumerable<TiposMascota> TiposMascotas { get; set; }
+        public TiposMascota TiposMascota { get; set; }
 
         public int? RazaId { get; set; }
+        public IEnumerable<Raza> Razas { get; set; }
+        public Raza Raza { get; set; }
 
         public string? Genero { get; set; }
 
